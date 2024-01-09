@@ -1,41 +1,8 @@
-"""
-Author: Orion Barrett-Tzannes, obarret@purdue.edu
-Assignment: 12.1 - Battleship
-Date: 07/6/2023
-
-Description:
-    Creates game of battleship where user guesses spots on a map and tries to sink enemy ships
-
-Contributors:
-    Name, login@purdue.edu [repeat for each]
-
-My contributor(s) helped me:
-    [ ] understand the assignment expectations without
-        telling me how they will approach it.
-    [ ] understand different ways to think about a solution
-        without helping me plan my solution.
-    [ ] think through the meaning of a specific error or
-        bug present in my code without looking at my code.
-    Note that if you helped somebody else with their code, you
-    have to list that person as a contributor.
-
-Academic Integrity Statement:
-    I have not used source code obtained from any unauthorized
-    source, either modified or unmodified; nor have I provided
-    another student access to my code.  The project I am
-    submitting is my own original work.
-"""
-
-"""Import additional modules below this line (starting with unit 6)."""
 
 
-"""Write new functions below this line (starting with unit 4)."""
+
 
 # Function to generate a randomized grid
-
-
-
-
 import random
 def make_grid():
     grid = [['~' for _ in range(10)] for _ in range(10)]
@@ -332,61 +299,7 @@ def play_game():
         return
 
 
-# Start the game
-'''def start_game():
-    print('Welcome to Space Battleship!')
-    while True:
-        print('Main Menu:')
-        print('1. View Instructions')
-        print('2. View Example Map')
-        print('3. Start a New Game')
-        print('4. View Hall of Fame')
-        print('5. Quit')
-        choice = input('Enter your choice: ')
 
-        if choice == '1':
-            print('Instructions:')
-            # Display game instructions here
-
-        elif choice == '2':
-            print('Example Map:')
-            example_grid = make_grid()
-            print_grid(example_grid)
-
-        elif choice == '3':
-            print('New Game:')
-            player = input('Enter your name: ')
-            grid = make_grid()
-            shots = 0
-            hits = 0
-
-            while hits < 17:
-                #print_grid(grid)
-                target = input('Enter your target (e.g., A1): ')
-                if not is_valid_target(target):
-                    print('Invalid target!')
-                    continue
-                shots += 1
-                if update_grid(grid, target):
-                    hits += 1
-                    print('Hit!')
-                else:
-                    print('Miss!')
-
-            score = calculate_score(hits, shots)
-            print('Congratulations, you destroyed all the ships!')
-            print(f'Your score: {score}')
-            update_hall_of_fame(player, hits, shots)
-
-        elif choice == '4':
-            display_hall_of_fame()
-
-        elif choice == '5':
-            print('Goodbye!')
-            break
-
-        else:
-            print('Invalid choice!')'''
 
 
 """Do not change anything below this line."""
